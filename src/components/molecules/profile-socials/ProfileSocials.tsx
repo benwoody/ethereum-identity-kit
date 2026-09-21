@@ -89,13 +89,13 @@ const ProfileSocials: React.FC<ProfileSocialsProps> = ({
               <LoadingCell key={index} height={iconSize} width={iconSize} radius="18px" />
             ))
           : displaySocials.map((social) =>
-              records?.[social.name] ||
-              social.name === 'etherscan' ||
-              social.name === 'grails' ||
-              social.name === 'vision' ||
-              social.name === 'opensea' ||
-              social.name === 'ens' ||
-              showEmptySocials ? (
+              social.name === 'id.thurin' && !userAddress ? null : records?.[social.name] ||
+                social.name === 'etherscan' ||
+                social.name === 'grails' ||
+                social.name === 'vision' ||
+                social.name === 'opensea' ||
+                social.name === 'ens' ||
+                showEmptySocials ? (
                 <a
                   key={social.name}
                   href={social.url(
