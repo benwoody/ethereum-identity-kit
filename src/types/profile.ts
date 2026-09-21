@@ -284,6 +284,7 @@ export type ProfileEFPSocialType =
   | 'etherscan'
   | 'com.twitter'
   | 'com.github'
+  | 'id.thurin'
   | 'org.telegram'
   | 'com.discord'
   | 'etherscan'

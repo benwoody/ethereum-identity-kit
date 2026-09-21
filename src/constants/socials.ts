@@ -11,6 +11,7 @@ import {
   Opensea,
   Vision,
   ENSCircle,
+  Thurin,
 } from '../components/icons'
 
 export const PROFILE_CARD_SOCIALS = [
@@ -68,6 +69,15 @@ export const PROFILE_CARD_SOCIALS = [
     icon: {
       light: Github,
       dark: GithubDark,
+    },
+  },
+  {
+    // shown when the id.thurin record exists; links by address (see ProfileSocials)
+    name: 'id.thurin',
+    url: (address: string) => `https://thurin.id/eth/${address}`,
+    icon: {
+      light: Thurin,
+      dark: Thurin,
     },
   },
   {

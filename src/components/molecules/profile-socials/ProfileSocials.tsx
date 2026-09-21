@@ -103,7 +103,8 @@ const ProfileSocials: React.FC<ProfileSocialsProps> = ({
                       social.name === 'grails' ||
                       social.name === 'vision' ||
                       social.name === 'opensea' ||
-                      social.name === 'ens'
+                      social.name === 'ens' ||
+                      social.name === 'id.thurin'
                       ? userAddress || ''
                       : records?.[social.name] || ''
                   )}
