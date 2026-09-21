@@ -37,9 +37,7 @@ const ProfileSocials: React.FC<ProfileSocialsProps> = ({
   showEmptySocials = false,
   hideSocials = [],
 }) => {
-  const displaySocials = PROFILE_CARD_SOCIALS.filter(
-    (social) => !hideSocials.includes(social.name) && !(social.name === 'id.thurin' && !userAddress)
-  )
+  const displaySocials = PROFILE_CARD_SOCIALS.filter((social) => !hideSocials.includes(social.name))
 
   return (
     <div className={clsx('profile-socials', darkMode && 'dark')} style={style}>
@@ -97,6 +95,7 @@ const ProfileSocials: React.FC<ProfileSocialsProps> = ({
               social.name === 'vision' ||
               social.name === 'opensea' ||
               social.name === 'ens' ||
+              social.name === 'thurin' ||
               showEmptySocials ? (
                 <a
                   key={social.name}
@@ -106,7 +105,7 @@ const ProfileSocials: React.FC<ProfileSocialsProps> = ({
                       social.name === 'vision' ||
                       social.name === 'opensea' ||
                       social.name === 'ens' ||
-                      social.name === 'id.thurin'
+                      social.name === 'thurin'
                       ? userAddress || ''
                       : records?.[social.name] || ''
                   )}
@@ -118,7 +117,8 @@ const ProfileSocials: React.FC<ProfileSocialsProps> = ({
                     social.name !== 'grails' &&
                     social.name !== 'vision' &&
                     social.name !== 'opensea' &&
-                    social.name !== 'ens'
+                    social.name !== 'ens' &&
+                    social.name !== 'thurin'
                   }
                   className="social-link"
                   onClick={() => {

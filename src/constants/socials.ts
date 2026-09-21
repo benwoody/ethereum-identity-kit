@@ -56,6 +56,14 @@ export const PROFILE_CARD_SOCIALS = [
     },
   },
   {
+    name: 'thurin',
+    url: (address: string) => `https://thurin.id/eth/${address}`,
+    icon: {
+      light: Thurin,
+      dark: Thurin,
+    },
+  },
+  {
     name: 'com.twitter',
     url: (username: string) => `https://twitter.com/${username}`,
     icon: {
@@ -69,15 +77,6 @@ export const PROFILE_CARD_SOCIALS = [
     icon: {
       light: Github,
       dark: GithubDark,
-    },
-  },
-  {
-    // shown when the id.thurin record exists; links by address (see ProfileSocials)
-    name: 'id.thurin',
-    url: (address: string) => `https://thurin.id/eth/${address}`,
-    icon: {
-      light: Thurin,
-      dark: Thurin,
     },
   },
   {

@@ -32,7 +32,6 @@ WithThurin.args = {
     url: 'https://thurin.id',
     'com.github': 'thurinlabs',
     'com.twitter': 'thurinlabs',
-    'id.thurin': '08B9374FDFBEC67EFFA24E669D3D86E35361EF7B',
     contenthash: 'ipfs://bafybeidondm2drq3empb7zs3cpnw53kfnznjp32j63xoxhqhvqt4skgvma',
   },
   includeUrls: true,
